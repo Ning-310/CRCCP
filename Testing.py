@@ -5,7 +5,7 @@ from keras.utils.np_utils import to_categorical
 from keras.models import load_model
 import numpy as np
 
-df=pd.read_table('Test.txt',sep='\t')
+df=pd.read_table('Test-Data.txt',sep='\t')
 rows=df.index.values.tolist()
 rows=np.array(rows)
 X_list=df.iloc[:,0:-1]
